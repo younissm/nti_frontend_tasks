@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card Grid</title>
+    <style>
+        @media (max-width: 600px) {
+            .product-cards
+            {
+                gap: 1rem; margin: 0;
+            }
+        }
+        * {
+            /* border: 1px solid; */
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        body {
+         background-color: #f4f6f8;
+          font-family: Arial, sans-serif;
+           padding: 1rem; 
+        }
+
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e0e5eb;
+            border-radius: 12px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 200ms ease, transform 200ms ease;
+            width: 100%;
+            padding: 1rem;
+            gap: 0.25rem;
+            min-height: 23rem;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .card img {
+            border-radius: 8px;
+            width: 10rem;
+            height: 10rem;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
+            align-self: center;
+        }
+
+        .card .overview {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            gap: 0.25rem;
+            flex-grow: 1;
+      
+        }
+
+        .description {
+            overflow: hidden;
+            flex-shrink: 1;
+        }
+        .name {
+            font-size: 1.3em;
+        }
+        .price {
+            font-size: 1.6em;
+            font-weight: bolder;
+            color: #218838;
+        }
+          
+        .buy {
+            background-color: #263238;
+            border: none;
+            border-radius: 7px;
+            color: white; 
+            font-weight: bold;
+            transition: background-color 150ms ease, color 150ms ease;
+            width: 100%;
+            align-self: center;
+            font-size:  1.3em;
+            padding: 0.4em;
+            border-radius: 7px;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .buy:hover {
+            background-color: rgb(248, 188, 141);
+            color: rgb(185, 71, 71);
+            transition-duration: 150ms;
+        }
+    
+        .product-cards {
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(min(100%, 16rem), 1fr));
+            gap: 2rem;
+            place-content: center;
+            margin: 20px auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Product card
+    Name
+    Description
+    Image
+    Price -->
+
+    <div class="product-cards">
+        <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+                <div class="card">
+            <div class="overview">
+                <img src="15746.jpg">
+
+                <h3 class="name">Product #1</h3>
+                <p class="price">$100</p>
+                <!-- <p class="description">Product 219912902 1902199021021092019
+                    2109219029 0 2190129902
+                    Product 2199 12902190219 9021021092019
+                    Product 21991290219 02199 021021092019
+                    21092190290 2190129902
+                    Product 2199129021902199021021092019
+                </p> -->
+            </div>
+
+
+            <div class="buy">
+                Add to Cart!
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
